@@ -192,7 +192,7 @@ margin-bottom: calc(var(--spacing-unit)*3);
 }
 #contact form {
     max-width: 700px;
-    margin:0 auto 
+    margin:0 auto;
 }
 #contact label{
     display: block;
@@ -204,7 +204,7 @@ margin-bottom: calc(var(--spacing-unit)*3);
 #contact textarea{
     width: 100%;
     padding: calc(var(--spacing-unit)*0.75);
-    margin-bottom: calc(var(--spacing-unit1.5));
+    margin-bottom: calc(var(--spacing-unit)*1.5);
     background-color: var(--surface-color);
     border: 1px solid var(--border-color);
     border-radius: var(--border-radius);
@@ -215,7 +215,7 @@ margin-bottom: calc(var(--spacing-unit)*3);
 }
 #contact textarea{
     resize: vertical;
-    min-height:150px ;
+    min-height: 150px ;
 }
 #contact input[type=text]:focus,
 #contact input[type="email"]:focus,
@@ -240,4 +240,28 @@ margin-bottom: calc(var(--spacing-unit)*3);
 #contact button[type="submit"]:hover
 {
     filter: brightness(90%);
+}
+footer{
+    background-color: var(--surface-color);
+    padding: calc(var(--spacing-unit)*2) 0;
+    border-top: 1px solid var(--border-color);
+    color: var(--text-color-light);
+    text-align: center;
+}
+footer .container{
+display: flex;
+justify-content: space-between;
+align-items: center;
+max-width: var(--container-width);
+margin: 0 auto;
+padding: 0 var(--spacing-unit);
+}
+footer ul{
+    text-decoration: none;
+    color: var(--text-color-light);
+    transition: color 0.2s ease-in-out;
+
+}
+footer ul li a:hover{
+    color: var(--primary-color);
 }
